@@ -17,7 +17,7 @@
 
   <body>
     <div id="app">
-      <h1>{{ message }}</h1>
+      <h1 v-show="emails.length == 10" v-for="email in emails">{{ email }}</h1>
     </div>
 
     <!-- AXIOS -->
